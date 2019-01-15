@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CountryListTableViewCell" customModule="DemoProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6G-Q8-wMV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="scF-DU-ejM">
+                                <rect key="frame" x="20" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6j2-D3-bS8"/>
+                                    <constraint firstAttribute="height" constant="40" id="8iA-No-sUb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpN-lJ-iAA">
+                                <rect key="frame" x="75" y="15" width="230" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="scF-DU-ejM" firstAttribute="leading" secondItem="t6G-Q8-wMV" secondAttribute="leading" constant="20" id="1nR-cw-6df"/>
+                            <constraint firstAttribute="bottom" secondItem="scF-DU-ejM" secondAttribute="bottom" constant="10" id="Xo1-OT-ybv"/>
+                            <constraint firstItem="scF-DU-ejM" firstAttribute="top" secondItem="t6G-Q8-wMV" secondAttribute="top" constant="10" id="YSm-Ev-KfV"/>
+                            <constraint firstAttribute="trailing" secondItem="GpN-lJ-iAA" secondAttribute="trailing" constant="15" id="tN3-sG-tZE"/>
+                            <constraint firstItem="GpN-lJ-iAA" firstAttribute="top" secondItem="t6G-Q8-wMV" secondAttribute="top" constant="15" id="vFV-69-kHc"/>
+                            <constraint firstAttribute="bottom" secondItem="GpN-lJ-iAA" secondAttribute="bottom" constant="15" id="xLp-gR-EW1"/>
+                            <constraint firstItem="GpN-lJ-iAA" firstAttribute="leading" secondItem="scF-DU-ejM" secondAttribute="trailing" constant="15" id="yi6-35-OXw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="t6G-Q8-wMV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FR3-i4-aTT"/>
+                    <constraint firstAttribute="bottom" secondItem="t6G-Q8-wMV" secondAttribute="bottom" id="QbI-Es-Zfh"/>
+                    <constraint firstItem="t6G-Q8-wMV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="waw-Ns-MXd"/>
+                    <constraint firstAttribute="trailing" secondItem="t6G-Q8-wMV" secondAttribute="trailing" id="wjc-eM-8dH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="countryImage" destination="scF-DU-ejM" id="wAQ-9a-yXk"/>
+                <outlet property="countryNameLbl" destination="GpN-lJ-iAA" id="SMx-Al-uI6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

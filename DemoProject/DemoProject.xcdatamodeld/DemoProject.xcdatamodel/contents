@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Countries" representedClassName="Countries" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="playerR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Players" inverseName="countryR" inverseEntity="Players" syncable="YES"/>
+    </entity>
+    <entity name="Players" representedClassName="Players" syncable="YES" codeGenerationType="class">
+        <attribute name="countryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="countryR" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Countries" inverseName="playerR" inverseEntity="Countries" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Countries" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Players" positionX="180" positionY="-3" width="128" height="88"/>
+    </elements>
+</model>
