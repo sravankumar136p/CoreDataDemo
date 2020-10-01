@@ -14,7 +14,7 @@ struct Country {
     let imageStr: String
     let name: String
     
-    
+    regufyeruykghrueihgiuregre
     rekfuekruhgferjknmb,rbrb
 }
 
