@@ -13,9 +13,7 @@ struct Country {
     let imageUrl: URL
     let imageStr: String
     let name: String
-    
-    regufyeruykghrueihgiuregre
-    rekfuekruhgferjknmb,rbrb
+
 }
 
 extension Country: Decodable {
